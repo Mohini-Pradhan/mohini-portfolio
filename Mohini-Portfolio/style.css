@@ -2,7 +2,7 @@
     --ivory: #F6F4EC;
     --sage: #A3B18A;
     --green: #588157;
-    --forest: #344E41;
+    --forest: #344e41;
     --white: #FFFFFF;
     --text: #29352D;
 }
@@ -18,10 +18,7 @@ body {
     color: var(--text);
     font-family: Arial, sans-serif;
 }
-
-
 /* Navbar */
-
 .navbar {
     background-color: var(--ivory);
     padding: 22px 0;
@@ -46,6 +43,12 @@ body {
     color: var(--green);
 }
 
+.navbar-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
 .contact-btn {
     background-color: var(--forest);
     color: white;
@@ -57,10 +60,7 @@ body {
     background-color: var(--green);
     color: white;
 }
-
-
 /* Hero Section */
-
 .hero-section {
     padding: 100px 0;
     min-height: 600px;
@@ -96,10 +96,7 @@ body {
     line-height: 1.8;
     max-width: 550px;
 }
-
-
 /* Hero Buttons */
-
 .hero-buttons {
     margin-top: 30px;
 }
@@ -128,10 +125,7 @@ body {
     background-color: var(--sage);
     color: var(--forest);
 }
-
-
 /* Profile Image */
-
 .profile-image-wrapper {
     background-color: var(--sage);
     border-radius: 50%;
@@ -170,10 +164,7 @@ body {
         height: 260px;
     }
 }
-
-
 /* Common Section Heading */
-
 .section-heading {
     margin-bottom: 40px;
 }
@@ -228,24 +219,10 @@ body {
 }
 
 .about-description {
-    color: #657066;
+    color: #29352D;
     line-height: 1.8;
     font-size: 15px;
 }
-
-.personal-info {
-    margin-top: 20px;
-}
-
-.personal-info p {
-    color: var(--text);
-    font-size: 14px;
-}
-
-.personal-info strong {
-    color: var(--forest);
-}
-
 
 /* Skills Section */
 
@@ -253,10 +230,7 @@ body {
     background-color: var(--ivory);
     padding: 90px 0;
 }
-
-
 /* Skill Cards */
-
 .skill-card {
     background-color: #FFFFFF;
     padding: 30px;
@@ -294,10 +268,7 @@ body {
     font-size: 12px;
     font-weight: 600;
 }
-
-
 /* Projects Section */
-
 .projects-section {
     background-color: #FFFFFF;
     padding: 90px 0;
@@ -352,8 +323,6 @@ body {
     background-color: var(--green);
     color: white;
 }
-
-
 /* Projects Section */
 .projects-section {
     background-color: var(--ivory);
@@ -418,8 +387,6 @@ body {
     background-color: var(--green);
     color: white;
 }
-
-
 /* Contact Section */
 .contact-section {
     background-color: #e8eee2;
@@ -474,4 +441,124 @@ body {
     background-color: var(--forest);
     color: var(--white);
     font-size: 14px;
+}
+
+body {
+    background: linear-gradient(
+        135deg,
+        #F6F4EC 0%,
+        #E8EEE2 50%,
+        #F6F4EC 100%
+    );
+}
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(
+        120deg,
+        #E8EEE2,
+        #F6F4EC,
+        #DDE8D5
+    );
+}
+/* About Section */
+.about-section {
+    background-color: #F0F2E9;
+}
+/* Skills Section */
+.skills-section {
+    background-color: #E5ECDF;
+}
+/* Projects Section */
+.projects-section {
+    background: linear-gradient(
+        135deg,
+        #F6F4EC,
+        #E8EEE2
+    );
+}
+/* Contact Section */
+.contact-section {
+    background: linear-gradient(
+        120deg,
+        #DDE8D5,
+        #F0F2E9
+    );
+}
+
+body {
+    background-color: #A3B18A;
+}
+
+.hero-section,
+.about-section,
+.skills-section,
+.projects-section,
+.contact-section {
+    background-color: #A3B18A;
+}
+
+.project-card,
+.contact-card,
+.skill-card {
+    background-color: #F6F4EC;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.project-card .github-btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.education-box {
+    background-color: var(--ivory);
+    padding: 25px;
+    border-radius: 15px;
+    border-left: 5px solid var(--green);
+    box-shadow: 0 5px 20px rgba(52, 78, 65, 0.08);
+}
+
+.education-title {
+    color: var(--forest);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.education-title i {
+    color: var(--green);
+    margin-right: 8px;
+}
+
+.education-item {
+    padding: 15px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.education-item h5 {
+    color: var(--forest);
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.education-item p {
+    color: var(--text);
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.education-institute {
+    color: var(--green) !important;
 }
